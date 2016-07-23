@@ -6,7 +6,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{4771B434-3DEC-EA6B-670E-647C65FB29FD}</ProjectGuid>
+    <ProjectGuid>{9667109F-7064-54F8-A0A6-E6AB1B4EC33C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp</AssemblyName>
@@ -45,12 +45,13 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Flip.cs" />
-     <Compile Include="Assets\Rotate.cs" />
      <Compile Include="Assets\Scripts\Cell.cs" />
+     <Compile Include="Assets\Scripts\Flip.cs" />
      <Compile Include="Assets\Scripts\Grid.cs" />
+     <Compile Include="Assets\Scripts\Rotate.cs" />
      <Compile Include="Assets\Scripts\Row.cs" />
      <Compile Include="Assets\Scripts\Tile.cs" />
+     <Compile Include="Assets\Scripts\color.cs" />
      <Compile Include="Assets\TouchScript\Examples\Camera\Scripts\CameraController.cs" />
      <Compile Include="Assets\TouchScript\Examples\Checkers\Scripts\Board.cs" />
      <Compile Include="Assets\TouchScript\Examples\Checkers\Scripts\Exclusive.cs" />
@@ -143,6 +144,7 @@
      <Compile Include="Assets\TouchScript\Scripts\Utils\TimedSequence.cs" />
      <Compile Include="Assets\TouchScript\Scripts\Utils\TouchUtils.cs" />
      <Compile Include="Assets\TouchScript\Scripts\Utils\TransformUtils.cs" />
+     <Compile Include="Assets\UIManager.cs" />
      <None Include="Assets\TouchScript\Shaders\DebugDepthTest.shader" />
      <None Include="Assets\TouchScript\license.txt" />
      <None Include="Assets\TouchScript\Shaders\DebugMultiplyDepthTest.shader" />
@@ -158,15 +160,15 @@
  <HintPath>C:/Program Files/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
  </Reference>
  <Reference Include="OSCsharp">
- <HintPath>C:/Users/prizm/Desktop/Blokus/Assets/TouchScript/Modules/TUIO/Libraries/OSCsharp.dll</HintPath>
+ <HintPath>C:/Users/prizm/Documents/GitHub/blokus-playtable/Assets/TouchScript/Modules/TUIO/Libraries/OSCsharp.dll</HintPath>
  </Reference>
  <Reference Include="TUIOsharp">
- <HintPath>C:/Users/prizm/Desktop/Blokus/Assets/TouchScript/Modules/TUIO/Libraries/TUIOsharp.dll</HintPath>
+ <HintPath>C:/Users/prizm/Documents/GitHub/blokus-playtable/Assets/TouchScript/Modules/TUIO/Libraries/TUIOsharp.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp-firstpass.csproj">
-      <Project>{127621B6-EE8F-275E-6EE3-6765D6A44D0F}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
+      <Project>{83698246-63F4-308A-432D-E8C8E5734880}</Project>      <Name>Assembly-CSharp-firstpass</Name>    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

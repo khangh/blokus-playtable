@@ -1,0 +1,35 @@
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2008
+
+Project("{F85D1924-91C0-5A5E-42BF-97A3C567DE93}") = "blokus-playtable", "Assembly-CSharp-firstpass.csproj", "{83698246-63F4-308A-432D-E8C8E5734880}"
+EndProject
+Project("{F85D1924-91C0-5A5E-42BF-97A3C567DE93}") = "blokus-playtable", "Assembly-CSharp.csproj", "{9667109F-7064-54F8-A0A6-E6AB1B4EC33C}"
+EndProject
+Project("{F85D1924-91C0-5A5E-42BF-97A3C567DE93}") = "blokus-playtable", "Assembly-CSharp-Editor.csproj", "{2D704D44-540F-B2F6-4867-AF6F83B98F08}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{83698246-63F4-308A-432D-E8C8E5734880}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83698246-63F4-308A-432D-E8C8E5734880}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83698246-63F4-308A-432D-E8C8E5734880}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83698246-63F4-308A-432D-E8C8E5734880}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9667109F-7064-54F8-A0A6-E6AB1B4EC33C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9667109F-7064-54F8-A0A6-E6AB1B4EC33C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9667109F-7064-54F8-A0A6-E6AB1B4EC33C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9667109F-7064-54F8-A0A6-E6AB1B4EC33C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2D704D44-540F-B2F6-4867-AF6F83B98F08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2D704D44-540F-B2F6-4867-AF6F83B98F08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2D704D44-540F-B2F6-4867-AF6F83B98F08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2D704D44-540F-B2F6-4867-AF6F83B98F08}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Assembly-CSharp.csproj
+	EndGlobalSection
+EndGlobal

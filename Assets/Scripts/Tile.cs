@@ -5,11 +5,17 @@ using TouchScript.Gestures;
 
 public class Tile : MonoBehaviour {
 
-	public static GameObject lastTransform = null;
+	public static GameObject lastTransformRed = null;
+	public static GameObject lastTransformBlue = null;
+	public static GameObject lastTransformGreen = null;
+	public static GameObject lastTransformYellow = null;
 
 	public GameObject grid;
 	// Declare a list to hold all the blocks of the tiles
 	public List<GameObject> blocks = new List<GameObject> ();
+
+	public bool canRotate = true;
+
 	// Add the blocks to the list
 	void Awake() {
 		foreach (Transform child in transform) {
@@ -40,14 +46,72 @@ public class Tile : MonoBehaviour {
 	}
 	// Called when object is pressed
 	void PressHandler (object sender, System.EventArgs e) {
-		GameObject obj = transform.FindChild ("Transform").gameObject;
-		if (lastTransform != obj && lastTransform != null) {
-			lastTransform.SetActive (false);
-			obj.SetActive (true);
-			lastTransform = obj;
+		if (canRotate) {
+			GameObject obj = transform.FindChild ("Transform").gameObject;
+			//Find this tile's team;
+			TeamColor myColor = transform.parent.GetComponent<color> ().myColor;
+			// Change correct transform depending on team
+			if (myColor == TeamColor.yellow) {
+				if (lastTransformYellow != obj && lastTransformYellow != null) {
+					lastTransformYellow.SetActive (false);
+					obj.SetActive (true);
+					lastTransformYellow = obj;
+				} else {
+					obj.SetActive (true);
+					lastTransformYellow = obj;
+				}
+			} else if (myColor == TeamColor.red) {
+				if (lastTransformRed != obj && lastTransformRed != null) {
+					lastTransformRed.SetActive (false);
+					obj.SetActive (true);
+					lastTransformRed = obj;
+				} else {
+					obj.SetActive (true);
+					lastTransformRed = obj;
+				}
+			} else if (myColor == TeamColor.green) {
+				if (lastTransformGreen != obj && lastTransformGreen != null) {
+					lastTransformGreen.SetActive (false);
+					obj.SetActive (true);
+					lastTransformGreen = obj;
+				} else {
+					obj.SetActive (true);
+					lastTransformGreen = obj;
+				}
+			} else if (myColor == TeamColor.blue) {
+				if (lastTransformBlue != obj && lastTransformBlue != null) {
+					lastTransformBlue.SetActive (false);
+					obj.SetActive (true);
+					lastTransformBlue = obj;
+				} else {
+					obj.SetActive (true);
+					lastTransformBlue = obj;
+				}
+			}
 		} else {
-			obj.SetActive (true);
-			lastTransform = obj;
+			TeamColor myColor = transform.parent.GetComponent<color> ().myColor;
+			// Change correct transform depending on team
+			if (myColor == TeamColor.yellow) {
+				if (lastTransformYellow != null) {
+					lastTransformYellow.SetActive (false);
+					lastTransformYellow = null;
+				}
+			} else if (myColor == TeamColor.red) {
+				if (lastTransformRed != null) {
+					lastTransformRed.SetActive (false);
+					lastTransformRed = null;
+				}
+			} else if (myColor == TeamColor.green) {
+				if (lastTransformGreen != null) {
+					lastTransformGreen.SetActive (false);
+					lastTransformGreen = null;
+				}
+			} else if (myColor == TeamColor.blue) {
+				if (lastTransformBlue != null) {
+					lastTransformBlue.SetActive (false);
+					lastTransformBlue = null;
+				}
+			}
 		}
 	}
 	// Called when object is being transformed by the gesture

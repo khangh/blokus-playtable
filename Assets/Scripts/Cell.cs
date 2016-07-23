@@ -8,7 +8,7 @@ public class Cell : MonoBehaviour {
 
 	public static Color defaultColor = Color.white;
 
-	void Awake() {
+	/*void Awake() {
 		GetComponent<Renderer> ().material.color = defaultColor;
 	}
 
@@ -23,5 +23,5 @@ public class Cell : MonoBehaviour {
 	void LongPressHander (object sender, System.EventArgs e) {
 		Debug.LogError(column + ", " + row);
 	}
-
+	*/
 }

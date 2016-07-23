@@ -29,7 +29,7 @@ public class Grid : MonoBehaviour {
 	 * Assigns a coordinate to all cells on the grid.
 	 */
 	public void enumerateCells() {
-		for (int col = 0; col < 20; col += 1) {
+		/*for (int col = 0; col < 20; col += 1) {
 			for (int row = 0; row < 20; row += 1) {
 
 				GameObject myCell = get (col, row);
@@ -37,6 +37,6 @@ public class Grid : MonoBehaviour {
 				cell.column = col;
 				cell.row = row;
 			}
-		}
+		}*/
 	}
 }
